@@ -48,7 +48,7 @@ function initGame(e) {
             alert(`Congratulations! You have found the word ${word.toUpperCase()}`);
             return randomWord();
         } else if(maxGuesses < 1) {
-            alert("Oops, Game over! You don't have remaining guesses");
+            alert("Game over! You don't have remaining guesses");
             for(let i = 0; i < word.length; i++) {
                 inputs.querySelectorAll("input")[i].value = word[i];
             }
